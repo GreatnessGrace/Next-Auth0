@@ -19,7 +19,7 @@ app.post("/auth/callback", async (req, res) => {
 
   try {
     const userInfo = await axios.get(
-      `https://${process.env.AUTH0_DOMAIN}/userinfo`,
+      `https://https://dev-0dqmv26n0q05xpcp.us.auth0.com/userinfo`,
       {
         headers: { Authorization: `Bearer ${token}` },
       }
